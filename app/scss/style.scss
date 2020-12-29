@@ -3,6 +3,131 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  padding: 35px 0 25px;
+}
+
+.header-top{
+  margin-bottom: 60px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__social{
+    display: flex;
+  }
+  &__social-item{
+    width: 20px;
+    height: 20px;
+    background-color: $accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__item{
+    line-height: 16px;
+    position: relative;
+    &:hover{
+      &::before{
+      content: '';
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: $accent;
+      opacity: 0.4;
+      border-radius: 1px;
+    }
+    }
+  }
+  &__item + .menu__item{
+    margin-left: 32px;
+  }
+  &__item.menu__item--active{
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: $accent;
+      opacity: 0.4;
+      border-radius: 1px;
+    }
+  }
+  &__item-link{
+    color: $text;
+  }
+}
+
+.header-content{
+  width: 1000px;
+  padding: 0 0 30px 25px;
+  margin: 0 auto;
+  background-image: url('../images/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  &__inner{
+    height: 300px;
+    background-image: url('../images/bg-top.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+  &__title{
+    text-transform: uppercase;
+    @extend %raleway-900;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 47px;
+  }
+  &__title-and{
+    display: inline-block;
+    text-align: left;
+    width: 88px;
+    line-height: 1;
+    font-size: 85px;
+    color: $accent;
+    background-image: url('../images/icons/and.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+  &__title-bottom{
+    max-width: 477px;
+    padding-left: 80px;
+  }
+  &__btn{
+    border: none;
+    background-color: transparent;
+    @extend %lato-700;
+    padding: 0 39px 0 0;
+    cursor: pointer;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 33px;
+      height: 24px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../images/icons/arrow-right.svg');
+    }
+  }
+}
 
 
 
