@@ -15,4 +15,25 @@ body{
   width: 1000px;
   padding: 0 25px;
   margin: 0 auto;
+  &--arrow-left{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 574px;
+      height: 32px;
+      left: 0;
+      bottom: 0;
+      background-image: url('../images/icons/arrow.svg');
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.title{
+  @extend %raleway-900;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }

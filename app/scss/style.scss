@@ -129,7 +129,41 @@
   }
 }
 
-
+.services{
+  padding: 25px 0 25px;
+  &__items{
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 224px;
+    height: 232px;
+    box-shadow: 0px 2px 6px rgba(23, 48, 71, 0.1);
+    border-radius: 0 10px 10px 10px;
+  }
+  &__item-top{
+    background-color: #4A98E1;
+    border-radius: 0 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    margin-bottom: 16px;
+  }
+  &__item-title{
+    margin-bottom: 8px;
+    padding: 0 7px 0 9px;
+    @extend %raleway-900;
+    font-size: 16px;
+    line-height: 24px;
+    color: #204261;
+  }
+  &__item-text{
+    padding: 0 7px 0 9px;
+    color: $text;
+  }
+}
 
 
 
