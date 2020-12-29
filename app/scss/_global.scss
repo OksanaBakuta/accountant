@@ -28,6 +28,19 @@ body{
       background-repeat: no-repeat;
     }
   }
+  &--arrow-right{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 39px;
+      height: 32px;
+      right: 0;
+      bottom: 0;
+      background-image: url('../images/icons/arrow.svg');
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .title{
