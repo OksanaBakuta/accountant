@@ -409,7 +409,7 @@
 }
 
 .review{
-  padding: 25px 0 25px 24px;
+  padding: 25px 0 50px 24px;
   width: 1000px;
   margin: 0 auto;
 }
@@ -471,6 +471,7 @@
     text-overflow: ellipsis;
   }
   &__title{
+    @extend %lato-300;
     color: $text;
     opacity: 0.7;
     line-height: 24px;
@@ -511,6 +512,81 @@
   height: 24px;
 }
 
+.footer{
+  padding: 30px 0 46px;
+  background-color: #EBEBEB;
+  &__inner{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__items{
+    margin-top: 18px;
+    opacity: 0.75;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &__title{
+    @extend %lato-700;
+    margin-bottom: 16px;
+  }
+  &__item{
+    padding-left: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../images/icons/location.svg');
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__item--tel::before{
+    background-image: url('../images/icons/phone.svg');
+  }
+  &__item--mail::before{
+    background-image: url('../images/icons/mail.svg');
+  }
+  &__link{
+    color: $text;
+  }
+  .logo__img{
+    margin: 0 auto;
+  }
+  &__social-box{
+    display: flex;
+    margin-top: 20px;
+  }
+  &__social-link{
+    width: 20px;
+    height: 20px;
+    background-color: #667280;
+    border-radius: 0 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__social-link + .footer__social-link{
+    margin-left: 27px;
+  }
+  &__social-img{
+    max-width: 14px;
+  }
+  &__text{
+    margin-bottom: 20px;
+    display: flex;
+    span{
+      margin-right: 10px;
+      width: 75px;
+    }
+  }
+}
 
 
 
