@@ -8,54 +8,29 @@ body{
   flex-direction: column;
   @extend %lato-400;
   color: $text;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .container{
-  width: 1000px;
+  width: 1250px;
   padding: 0 25px;
   margin: 0 auto;
-  &--arrow-left{
-    position: relative;
-    &::before{
-      content: '';
-      position: absolute;
-      width: 574px;
-      height: 32px;
-      left: 0;
-      bottom: 0;
-      background-image: url('../images/icons/arrow-bg-right.svg');
-      background-repeat: no-repeat;
-    }
-  }
   &--arrow-right{
-    padding: 0 25px 80px;
+    padding: 0 25px 50px;
     position: relative;
-    &::before{
-      content: '';
-      position: absolute;
-      width: 574px;
-      height: 38px;
-      right: 0;
-      bottom: 0;
-      background-image: url('../images/icons/arrow-bg-right.svg');
-      background-repeat: no-repeat;
-    }
+    background-image: url('../images/icons/arrow-bg-right.svg');
+    background-repeat: no-repeat;
+    background-size: 61%;
+    background-position: right bottom;
   }
   &--arrow-left{
-    padding: 0 25px 80px;
-      position: relative;
-      &::before{
-        content: '';
-        position: absolute;
-        width: 574px;
-        height: 36px;
-        right: 0;
-        bottom: 0;
-        background-image: url('../images/icons/arrow-bg-left.svg');
-        background-repeat: no-repeat;
-      }
-    }
+    padding: 0 25px 50px;
+    position: relative;
+    background-image: url('../images/icons/arrow-bg-left.svg');
+    background-repeat: no-repeat;
+    background-size: 61%;
+    background-position: left bottom;
+  }
 }
 
 
@@ -63,6 +38,6 @@ body{
   @extend %raleway-900;
   font-size: 28px;
   line-height: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-transform: uppercase;
 }
