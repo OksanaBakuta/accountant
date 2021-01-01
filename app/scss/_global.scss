@@ -4,6 +4,7 @@ body{
 }
 
 body{
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   @extend %lato-400;
@@ -12,7 +13,7 @@ body{
 }
 
 .container{
-  width: 1250px;
+  max-width: 1250px;
   padding: 0 25px;
   margin: 0 auto;
   &--arrow-right{

@@ -1,0 +1,271 @@
+@media (max-width: 1200px){
+  body{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .header-top{
+    .logo__img{
+      height: 20px;
+    }
+    &__social-link{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .header-content{
+    background-size: 66%;
+    &__title{
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__inner{
+      height: 380px;
+      background-size: 66%;
+    }
+  }
+  .services{
+    &__item{
+      width: 225px;
+    }
+  }
+}
+
+@media (max-width: 1080px){
+  .header-content{
+    padding: 0 0 35px 25px;
+    background-size: 60%;
+    &__inner{
+      height: 350px;
+      background-size: 61% 100%;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .header-content{
+    background-size: 58%;
+    &__inner{
+      height: 330px;
+      background-size: 57% 100%;
+    }
+  }
+  .services{
+    &__item{
+      width: 190px;
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .header-content{
+    background-size: 47%;
+    &__inner{
+      height: 100%;
+      background-size: 46% 100%;
+    }
+  }
+  .container--arrow-left,
+  .container--arrow-right{
+    padding: 0 25px 40px;
+  }
+  .services{
+    &__item{
+      width: 165px;
+    }
+  }
+}
+
+@media (max-width: 760px){
+  .menu__item+.menu__item {
+    margin-left: 16px;
+  }
+  .header-content{
+    background-size: 56%;
+    &__title{
+      font-size: 30px;
+      margin-bottom: 64px;
+    }
+    &__inner{
+      background-image: url('../images/bg-top-2.png');
+      background-size: 58% 100%;
+    }
+  }
+  .title{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  .container--arrow-left,
+  .container--arrow-right{
+    padding: 0 25px 28px;
+}
+  .services{
+    &__items{
+      margin-bottom: 40px;
+    }
+    &__item{
+      width: 144px;
+    }
+    &__item-title,
+    &__item-text{
+      padding: 0 8px 0 8px;
+    }
+  }
+}
+
+@media (max-width: 660px){
+  .header-top{
+    margin-bottom: 13px;
+  }
+  .menu{
+    order: 1;
+    &__btn{
+      display: flex;
+      z-index: 2;
+      outline: none;
+      transition: all .3s;
+    }
+    &__btn--active{
+      height: 15px;
+      span{
+        background-color: transparent;
+      }
+      &::before{
+        top: 50%;
+        transform: translateY(-50%);
+        transform: rotate(40deg);
+      }
+      &::after{
+        top: 50%;
+        transform: translateY(-50%);
+        transform: rotate(-40deg);
+      }
+    }
+    &__list{
+      display: block;
+      background-color: #bcd0e2;
+      position: absolute;
+      top: 0;
+      right: -200px;
+      height: 100vh;
+      transition: all .3s;
+    }
+    &__list--active{
+      right: 0;
+    }
+    &__item + .menu__item {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  ul.menu__list{
+    padding: 55px 35px 20px 20px;
+  }
+  .header-content{
+    background-size: 100%;
+    &__title{
+      font-size: 30px;
+    }
+    &__title-bottom{
+      max-width: 400px;
+    }
+  }
+  .container--arrow-left,
+  .container--arrow-right {
+    padding: 0 25px 42px;
+    background-size: 100%;
+  }
+
+  .services{
+    &__items{
+      margin-bottom: 20px;
+      justify-content: space-around;
+    }
+    &__item{
+      width: 260px;
+      margin-bottom: 20px;
+    }
+    &__item-title,
+    &__item-text{
+      padding: 0 8px 0 8px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .header-content{
+    &__title-bottom{
+      padding-left: 40px;
+    }
+  }
+  .services__item {
+    width: 230px;
+  }
+}
+
+@media (max-width: 550px){
+  .container{
+    padding: 0 15px;
+  }
+  .container--arrow-left,
+  .container--arrow-right {
+    padding: 0 15px 42px;
+    background-size: 100%;
+  }
+  .header-content{
+    &__inner{
+      background-image: url('../images/bg-top-3.png');
+      background-position: bottom right;
+      background-size: 40% 53%;
+    }
+    &__title{
+      font-size: 30px;
+    }
+  }
+  .services{
+    &__items{
+      margin-bottom: 10px;
+    }
+    &__item{
+      width: 190px;
+    }
+  }
+}
+
+@media (max-width: 440px){
+  .header-content{
+    padding: 0 0 25px 15px;
+    &__inner{
+      background-size: 45% 60%;
+    }
+    &__title{
+      font-size: 22px;
+    }
+    &__title-and{
+      font-size: 60px;
+      background-size: 47px;
+      width: 68px;
+    }
+    &__title-bottom{
+      max-width: 370px;
+      padding-left: 30px;
+    }
+  }
+  .container--arrow-left,
+  .container--arrow-right {
+    padding: 0 15px 25px;
+  }
+  .title{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+  .services{
+    &__item{
+      width: 136px;
+      &:nth-child(odd){
+        margin-right: 16px;
+      }
+    }
+  }
+}
