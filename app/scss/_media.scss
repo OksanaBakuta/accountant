@@ -47,7 +47,15 @@
       width: 150px;
     }
   }
-  
+  .slider-item{
+    &__text-box {
+      max-width: 600px;
+    }
+    &__text{
+      font-size: 16px;
+      max-width: 500px;
+    }
+  }
 }
 
 @media (max-width: 1080px){
@@ -68,6 +76,16 @@
     font-size: 10px;
     }
   }
+  .slider-item{
+    &__text-box {
+      max-width: 500px;
+    }
+    &__text{
+      font-size: 16px;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media (max-width: 992px){
@@ -81,43 +99,6 @@
   .services{
     &__item{
       width: 190px;
-    }
-  }
-  .price{
-    .slick-arrow{
-      width: 63px;
-      height: 24px;
-      background-color: transparent;
-      border: none;
-      background-image: url('../images/icons/slide-arrow-right.svg');
-      background-repeat: no-repeat;
-      background-position: right center;
-      outline: none;
-      color: transparent;
-      cursor: pointer;
-    }
-    .slick-next{
-      position: absolute;
-      bottom: 50px;
-      left: 8px;
-    }
-    .slick-prev.slick-arrow{
-      padding-left: 40px;
-      padding-right: 40px;
-      margin: auto auto 52px 0;
-      background-position: right center;
-      transform: rotate(180deg);
-    }
-    .slick-prev.slick-arrow.slick-disabled,
-    .slick-next.slick-arrow.slick-disabled{
-      background-image: url('../images/icons/slide-arrow-dis.svg');
-      background-position: left center;
-    }
-    .slick-prev.slick-arrow.slick-disabled{
-      transform: rotate(360deg);
-    }
-    .slick-next.slick-arrow.slick-disabled{
-      transform: rotate(180deg);
     }
   }
 }
@@ -152,6 +133,20 @@
     &__item{
       margin-right: 30px;
     } 
+  }
+  .review{
+    padding: 25px 25px 50px 25px;
+    width: 100%;
+  }
+  .slider-item{
+    &__text-box {
+      max-width: 500px;
+    }
+    &__text{
+      font-size: 16px;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -407,6 +402,41 @@
   .price__link,
   .partners__inner{
     margin-bottom: 10px;
+  }
+  .review{
+    padding: 25px 15px;
+  }
+  .slider-item{
+    &__img-box{
+      width: 60px;
+      height: 92px;
+    }
+    &__img{
+      width: 60px;
+      height: 60px;
+    }
+    &__icons{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+    &__link+.slider-item__link {
+      margin-top: 0;
+    }
+    &__link{
+      margin: 0;
+    }
+    &__text-box{
+      margin: 0 0 16px 76px;
+      max-width: 100%;
+    }
+    &__text{
+      font-size: inherit;
+      max-width: 100%;
+    }
+    &__title{
+      margin: 0 0 20px 76px;
+    }
   }
 }
 

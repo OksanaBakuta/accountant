@@ -5,12 +5,60 @@ $(function(){
     $('.menu__btn').toggleClass('menu__btn--active')
   });
   
-  var swiper = new Swiper('.slider', {
+ /*  var swiper = new Swiper('.slider', {
     slidesPerView: 'auto',
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+  }); */
+
+  $('.slider').slick({
+    infinite: false,
+    slidesToShow: 1.4,
+    draggable: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          infinite: false,
+          slidesToShow: 1.6,
+          draggable: true,
+          arrows: true,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 1120,
+        settings: {
+          infinite: false,
+          slidesToShow: 1.8,
+          draggable: true,
+          arrows: true,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          draggable: true,
+          arrows: true,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          draggable: true,
+          arrows: false,
+          dots: true,
+        }
+      },
+    ]
   });
 
   $(window).on('load resize', function () {
