@@ -216,7 +216,7 @@
 
 .advantage{
   padding: 40px 0;
-  &__items{
+  &__item-top{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -227,7 +227,6 @@
   }
   &__item-box{
     padding: 0 55px;
-    width: 100%;
     display: flex;
     justify-content: space-around;
   }

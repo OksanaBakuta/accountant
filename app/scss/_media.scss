@@ -73,6 +73,15 @@
       width: 165px;
     }
   }
+  .advantage{
+    &__item {
+      width: 144px;
+      margin-bottom: 50px;
+    }
+    &__num{
+      font-size: 34px;
+    }
+  }
 }
 
 @media (max-width: 760px){
@@ -143,15 +152,18 @@
     }
     &__list{
       display: block;
-      background-color: #bcd0e2;
+      background-color: #CAD1D9;
       position: absolute;
       top: 0;
-      right: -200px;
-      height: 100vh;
-      transition: all .3s;
-    }
-    &__list--active{
       right: 0;
+      transform: translateX(200%);
+      height: 100vh;
+      z-index: 1;
+      transition: all .3s;
+      &.menu__list--active{
+        transition: all .3s;
+        transform: translateX(0);
+      }
     }
     &__item + .menu__item {
       margin-left: 0;
@@ -188,6 +200,23 @@
     &__item-title,
     &__item-text{
       padding: 0 8px 0 8px;
+    }
+  }
+  .advantage{
+    &__items{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item-top,
+    &__item-box{
+      flex-direction: column;
+    }
+    &__item-box{
+      padding: 50px 0;
+    }
+    &__item{
+      margin-bottom: 70px;
+      width: 230px;
     }
   }
 }
@@ -230,6 +259,15 @@
       width: 190px;
     }
   }
+  .advantage{
+    &__item-box{
+      justify-content: center;
+    }
+    &__item{
+      width: 200px;
+      font-size: 12px;
+    }
+  }
 }
 
 @media (max-width: 440px){
@@ -262,10 +300,16 @@
   }
   .services{
     &__item{
-      width: 136px;
+      width: 132px;
       &:nth-child(odd){
-        margin-right: 16px;
+        margin-right: 8px;
       }
+    }
+  }
+  .advantage{
+    &__item{
+      width: 144px;
+      margin-bottom: 40px;
     }
   }
 }
