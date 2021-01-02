@@ -197,6 +197,10 @@
     width: 144px;
     }
   }
+  .price__link,
+  .partners__inner{
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 660px){
@@ -296,6 +300,61 @@
       width: 230px;
     }
   }
+  .price__link,
+  .partners__inner{
+    margin-bottom: 30px;
+  }
+  .partners{
+    &__inner {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+    &__item{
+      &:nth-child(1){
+        display: none;
+      }
+      &:nth-child(2){
+        grid-column: span 3;
+        border-radius: 10px 0 0 0;
+        border-left: 1px solid #CAD1D9;
+      }
+      &:nth-child(3){
+        grid-column: span 3;
+      }
+      &:nth-child(4){
+        grid-column: span 2;
+      }
+      &:nth-child(5){
+        display: none;
+      }
+      &:nth-child(6){
+        grid-column: span 5;
+        border-left: 1px solid #CAD1D9;
+        border-bottom: 1px solid #CAD1D9;
+      }
+      &:nth-child(7){
+        display: none;
+      }
+      &:nth-child(8){
+        grid-column: span 3;
+        border-radius: 0 0 10px 0;
+        border-left: none;
+      }
+      &:nth-child(9){
+        grid-column: span 2;
+        order: 1;
+        border-radius: 0 0 10px 0;
+        border-left: none;
+        border-top: none;
+      }
+      &:nth-child(10){
+        grid-column: span 2;
+        border-radius: 0;
+        border-left: 1px solid #CAD1D9;
+        border-top: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px){
@@ -344,6 +403,10 @@
       width: 200px;
       font-size: 12px;
     }
+  }
+  .price__link,
+  .partners__inner{
+    margin-bottom: 10px;
   }
 }
 
@@ -403,5 +466,49 @@
   }
   .slick-slide {
     padding: 25px 5px 10px 0;
-}
+  }
+  .partners{
+    &__inner {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+    &__item{
+      &:nth-child(2){
+        grid-column: span 2;
+      }
+      &:nth-child(3){
+        grid-column: span 2;
+        order: 1;
+        display: flex;
+        visibility: hidden;
+      }
+      &:nth-child(4){
+        grid-column: span 2;
+      }
+      &:nth-child(6){
+        grid-column: span 4;
+      }
+       &:nth-child(7){
+        display: flex;
+        grid-column: span 1;
+        border-left: 1px solid #CAD1D9;
+        border-top: none;
+        border-radius: 0 0 0 10px;
+      }
+      &:nth-child(8){
+        grid-column: span 2;
+        border-top: none;
+        border-radius: 0;
+      }
+      &:nth-child(9){
+        grid-column: span 2;
+        border-radius: 0 0 10px 10px;
+        border-left: 1px solid #CAD1D9;
+      }
+      &:nth-child(10){
+        grid-column: span 1;
+        border-left: none;
+      }
+    }
+  }
 }
