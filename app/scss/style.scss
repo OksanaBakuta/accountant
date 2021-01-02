@@ -247,14 +247,23 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    padding: 20px 0;
   }
   &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  &__item-link{
+    color: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
     border: 1px solid #CAD1D9;
-    width: 185px;
+    width: 180px;
+    height: 100%;
     text-align: center;
     color: $text;
     position: relative;
@@ -363,6 +372,51 @@
       transform: translateY(-50%);
       background-image: url('../images/icons/arrow-right.svg');
     }
+  }
+}
+
+
+.slick-list {
+  width: 100%;
+}
+
+.slick-slide {
+   padding: 25px 10px;
+}
+
+.slick-dots{
+  font-size: 1px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  li + li{
+    margin-left: 4px;
+  }
+  li{
+    display: flex;
+    align-items: center;
+  }
+  button{
+    background-color: transparent;
+    width: 16px;
+    height: 6px;
+    cursor: pointer;
+    border: 1px solid #667280;
+    border-radius: 2px;
+    outline: none;
+  }
+}
+
+.slick-active{
+  button{
+    width: 24px;
+    height: 8px;
+    border-radius: 2px;
+    background-color: $accent;
+    border: none;
   }
 }
 
@@ -546,11 +600,17 @@
   }
 }
 
+.swiper-container{
+  position: relative;
+}
+
 .swiper-slide {
   width: 60%;
 }
 
+
 .swiper-button-next{
+  position: absolute;
   top: auto;
   bottom: 0;
   right: auto;

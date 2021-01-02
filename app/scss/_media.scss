@@ -1,4 +1,4 @@
-@media (max-width: 1200px){
+@media (max-width: 1260px){
   body{
     font-size: 14px;
     line-height: 20px;
@@ -28,6 +28,26 @@
       width: 225px;
     }
   }
+  .price{
+    &__item{
+      width: 160px;
+    }
+    &__item-title{
+      font-size: 16px;
+    }
+    &__sum-num{
+      font-size: 20px;
+    }
+    &__sum-text,
+    &__sum-val {
+    font-size: 12px;
+    }
+    &__item,
+    &__item-link{
+      width: 150px;
+    }
+  }
+  
 }
 
 @media (max-width: 1080px){
@@ -37,6 +57,15 @@
     &__inner{
       height: 350px;
       background-size: 61% 100%;
+    }
+  }
+  .price{
+    &__item{
+      width: 144px;
+    }
+    &__sum-text,
+    &__sum-val {
+    font-size: 10px;
     }
   }
 }
@@ -52,6 +81,43 @@
   .services{
     &__item{
       width: 190px;
+    }
+  }
+  .price{
+    .slick-arrow{
+      width: 63px;
+      height: 24px;
+      background-color: transparent;
+      border: none;
+      background-image: url('../images/icons/slide-arrow-right.svg');
+      background-repeat: no-repeat;
+      background-position: right center;
+      outline: none;
+      color: transparent;
+      cursor: pointer;
+    }
+    .slick-next{
+      position: absolute;
+      bottom: 50px;
+      left: 8px;
+    }
+    .slick-prev.slick-arrow{
+      padding-left: 40px;
+      padding-right: 40px;
+      margin: auto auto 52px 0;
+      background-position: right center;
+      transform: rotate(180deg);
+    }
+    .slick-prev.slick-arrow.slick-disabled,
+    .slick-next.slick-arrow.slick-disabled{
+      background-image: url('../images/icons/slide-arrow-dis.svg');
+      background-position: left center;
+    }
+    .slick-prev.slick-arrow.slick-disabled{
+      transform: rotate(360deg);
+    }
+    .slick-next.slick-arrow.slick-disabled{
+      transform: rotate(180deg);
     }
   }
 }
@@ -75,12 +141,17 @@
   }
   .advantage{
     &__item {
-      width: 144px;
+        width: 144px;
       margin-bottom: 50px;
     }
     &__num{
       font-size: 34px;
     }
+  }
+  .price{
+    &__item{
+      margin-right: 30px;
+    } 
   }
 }
 
@@ -118,6 +189,12 @@
     &__item-title,
     &__item-text{
       padding: 0 8px 0 8px;
+    }
+  }
+  .price{
+    &__item,
+    &__item-link {
+    width: 144px;
     }
   }
 }
@@ -271,6 +348,9 @@
 }
 
 @media (max-width: 440px){
+  body{
+    font-size: 12px;
+  }
   .header-content{
     padding: 0 0 25px 15px;
     &__inner{
@@ -312,4 +392,16 @@
       margin-bottom: 40px;
     }
   }
+  .price{
+    &__item,
+    &__item-link {
+    width: 132px;
+    }
+    &__item-title {
+    font-size: 14px;
+    }
+  }
+  .slick-slide {
+    padding: 25px 5px 10px 0;
+}
 }
