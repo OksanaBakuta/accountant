@@ -2,17 +2,11 @@ $(function(){
 
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active');
-    $('.menu__btn').toggleClass('menu__btn--active')
+    $('.menu__btn').toggleClass('menu__btn--active');
+    $('.menu').toggleClass('menu--active');
+
   });
   
- /*  var swiper = new Swiper('.slider', {
-    slidesPerView: 'auto',
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  }); */
-
   $('.slider').slick({
     infinite: false,
     slidesToShow: 1.4,

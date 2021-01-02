@@ -148,6 +148,22 @@
       margin-bottom: 20px;
     }
   }
+  .footer{
+    &__items{
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .logo__img{
+      height: 20px;
+    }
+    &__social-link{
+      width: 20px;
+      height: 20px;
+    }
+    &__social-link + .footer__social-link{
+      margin-left: 24px;
+    }
+  }
 }
 
 @media (max-width: 760px){
@@ -196,6 +212,21 @@
   .partners__inner{
     margin-bottom: 40px;
   }
+  .footer{
+    &__items{
+      margin-top: 50px;
+    }
+    &__title{
+      text-align: center;
+    }
+    &__title--time{
+      text-align: right;
+    }
+    &__text span {
+      margin-right: 0;
+      width: 70px;
+    }
+  }
 }
 
 @media (max-width: 660px){
@@ -204,6 +235,7 @@
   }
   .menu{
     order: 1;
+    transition: all .3s;
     &__btn{
       display: flex;
       z-index: 2;
@@ -225,6 +257,9 @@
         transform: translateY(-50%);
         transform: rotate(-40deg);
       }
+    }
+    &.menu--active{
+      box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
     }
     &__list{
       display: block;
@@ -360,6 +395,18 @@
   }
   .services__item {
     width: 230px;
+  }
+  .footer{
+    position: relative;
+    &__social{
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__items{
+      margin-top: 82px;
+    }
   }
 }
 
@@ -538,6 +585,44 @@
       &:nth-child(10){
         grid-column: span 1;
         border-left: none;
+      }
+    }
+  }
+  .footer{
+    &__items{
+      font-size: 11px;
+      line-height: 12px;
+    }
+    &__item{
+      padding-left: 0;
+      padding-top: 20px;
+      margin-bottom: 15px;
+      max-width: 138px;
+      text-align: center;
+      &::before{
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: cover;
+      }
+    }
+    &__title{
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    &__title--time{
+      margin-bottom: 16px;
+    }
+    &__text{
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      span{
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 4px;
       }
     }
   }
