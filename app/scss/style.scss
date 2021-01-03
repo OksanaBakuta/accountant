@@ -4,11 +4,24 @@
 @import 'reset';
 @import 'global';
 
+body.look{
+  overflow: hidden;
+}
+
 .header{
   padding: 35px 0 40px;
 }
 
 .header-top{
+  transition: all .3s ;
+  &.header-top__fixed{
+    background-color: #EBEBEB;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    z-index: 66;
+  }
   margin-bottom: 60px;
   &__inner{
     display: flex;
@@ -539,7 +552,7 @@
 
 .review{
   padding: 25px 0 50px 25px;
-  width: 1250px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 

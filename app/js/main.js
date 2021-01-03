@@ -1,9 +1,20 @@
 $(function(){
 
+  var hh = $('.header-top').height() + 50;
+  
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > hh){
+      $('.header-top').addClass('header-top__fixed');
+    }else{
+      $('.header-top').removeClass('header-top__fixed');
+    }
+  });
+
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active');
     $('.menu__btn').toggleClass('menu__btn--active');
     $('.menu').toggleClass('menu--active');
+    $('body').toggleClass('look');
 
   });
   
