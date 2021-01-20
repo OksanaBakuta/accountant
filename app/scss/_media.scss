@@ -398,8 +398,18 @@
       padding-left: 40px;
     }
   }
-  .services__item {
-    width: 230px;
+  .services{
+    &__item{
+      width: 230px;
+    }
+    &__item-title{
+      font-size: 14px;
+    }
+  }
+  .price{
+    &__sum-num {
+      font-size: 15px;
+    }
   }
   .footer{
     position: relative;
@@ -502,7 +512,7 @@
       background-size: 45% 60%;
     }
     &__title{
-      font-size: 22px;
+      font-size: 20px;
     }
     &__title-and{
       font-size: 60px;

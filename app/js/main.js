@@ -18,6 +18,7 @@ $(function(){
 
   });
   
+  
   $('.slider').slick({
     infinite: false,
     slidesToShow: 1.4,
